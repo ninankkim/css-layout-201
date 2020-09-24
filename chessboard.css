@@ -1,0 +1,50 @@
+.container{
+    border:1px solid red;
+    height:100vh;
+    width:100vw;
+}
+
+.emptyrow{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 100px;
+    height: 100%;
+    width: 10%;
+    background-color: white;
+}
+
+.row{
+    display:flex;
+    width: 100%;
+    height:10%;
+}
+
+.tile{
+    height:100%;
+    width: 10%;
+    border:1px solid black;
+}
+
+.tile:nth-of-type(even){
+    background-color: black;
+}
+
+.row:nth-of-type(even){
+    flex-direction: row-reverse;
+}
+
+.tile:first-child,.tile:last-child{
+    background-color:white;
+    border: none;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.row:first-child,.row:last-child{
+    background-color:white;
+    border:none;
+}
+
